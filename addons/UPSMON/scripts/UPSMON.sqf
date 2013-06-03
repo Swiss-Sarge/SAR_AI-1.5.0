@@ -900,6 +900,15 @@ while {_loop} do {
 		
 	//exits from loop
 	if (_exit) exitwith {};
+    
+    // verifies units are neither hidden nor invincible
+    
+    // reset the group in case something went wrong earlier
+    {
+        _x allowDamage true;
+        [nil, _x, "per", rHideObject, false] call RE;    
+        _x enableAI "FSM";    
+    } foreach units _npc;
 	
 	//Assign the current leader of the group in the array of group leaders
 	KRON_NPCs set [_grpid,_npc];
