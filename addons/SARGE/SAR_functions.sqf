@@ -560,7 +560,7 @@ SAR_veh_side_debug = {
         
         switch (_side) do 
         {
-            case enemy:
+            case sideEnemy:
             {
                 _sphere_red = 1;
                 _sphere_green= 1;
