@@ -1,6 +1,6 @@
 // =========================================================================================================
 //  SAR_AI - DayZ AI library
-//  Version: 1.5.0 
+//  Version: 1.5.2 
 //  Author: Sarge (sarge@krumeich.ch) 
 //
 //		Wiki: to come
@@ -25,7 +25,7 @@ SAR_dynamic_spawning = true;
 // enable or disable the AI debug monitor
 // -----------------------------------------------
 
-SAR_DEBUGMONITOR= true;
+SAR_DEBUGMONITOR= false;
 
 // -----------------------------------------------
 // default values for dynamic grid spawning
@@ -182,6 +182,12 @@ SAR_EXTREME_DEBUG = false;
 // SET THIS TO 0 to hide the group markers on the map and see the UPSMON group debug messages
 // Possible values: 1 = enabled, 0 = disabled
 KRON_UPS_Debug = 0;
+
+//
+// SET THIS TO 1 to see waypoints and pathfinding information in your rpt
+// Possible values: 1 = enabled, 0 = disabled
+
+KRON_UPS_WP_Debug = 0;
 
 //
 // SET THIS TO 1 to enable AI debugging in the rpt. You will be able to debug targets / enemy handling
