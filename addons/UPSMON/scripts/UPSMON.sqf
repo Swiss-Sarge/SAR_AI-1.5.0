@@ -2491,7 +2491,7 @@ while {_loop} do {
     _npcname = vehicleVarname _npc;
 	_cont = (call compile format ["KRON_UPS_%1",_npcname]);
     
-    diag_log format ["_cont = %1 for leader: %2", _cont, format ["KRON_UPS_%1",_npcname]];
+    if(SAR_DEBUG) then {diag_log format ["_cont = %1 for leader: %2", _cont, format ["KRON_UPS_%1",_npcname]];};
 	
     if (_cont==0) then { // exit loop criterium
         _exit=true;
