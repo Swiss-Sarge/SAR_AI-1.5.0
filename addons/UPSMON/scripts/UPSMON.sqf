@@ -2979,7 +2979,7 @@ if (_respawn && {_respawnmax > 0} &&  {!_surrended}) then {
                 // set counter for the whole group
                 _tmp_count_units = _tmp_count_units + _tmp_cargo_units;
 
-                // first car we poulate with the leader as a driver
+                // first car we populate with the leader as a driver
                 if(_tmp_vehicle_number == 0) then {
 
                     // set the leader as driver
@@ -3017,6 +3017,8 @@ if (_respawn && {_respawnmax > 0} &&  {!_surrended}) then {
                 {
                     if(_foreachIndex > 0) then {
                         _x moveInTurret [_veh,[0]];
+                    } else {
+                        _x moveindriver _veh;
                     };
                 } foreach units _leader;
             };
