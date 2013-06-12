@@ -1,7 +1,7 @@
 SAR_AI
 ======
 
-Version 1.5.0
+Version 1.5.2
 
 docu coming later :-) read the 1.1.0 docs and check the SAR_config file and your maps cfg file.
 
