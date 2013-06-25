@@ -132,7 +132,7 @@ _groupvehicles setVariable ["SAR_protect",true,true];
 {
 
     // create the vehicle
-    _veh = createVehicle [_x, [_rndpos select 0, _rndpos select 1, 10], [], 0, "NONE"];
+    _veh = createVehicle [_x, [_rndpos select 0, _rndpos select 1, 0], [], 0, "NONE"];
     _veh setFuel 1;
     _veh setVariable ["Sarge",1,true];
     _veh engineon true; 
